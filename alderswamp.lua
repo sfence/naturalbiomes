@@ -112,6 +112,12 @@ minetest.register_node("naturalbiomes:alder_leaves", {
   after_place_node = default.after_place_leaves,
 })
 
+default.register_leafdecay({
+    leaves = {"naturalbiomes:alder_leaves"},
+    trunks = {"naturalbiomes:alder_trunk"},
+    radius = 3,
+  })
+
 minetest.register_node("naturalbiomes:alder_sapling", {
   description = ("Alder Sapling"),
   drawtype = "plantlike",

@@ -113,6 +113,12 @@ minetest.register_node("naturalbiomes:alppine1_leaves", {
   after_place_node = default.after_place_leaves,
 })
 
+default.register_leafdecay({
+    leaves = {"naturalbiomes:alppine1_leaves"},
+    trunks = {"naturalbiomes:alppine1_trunk"},
+    radius = 3,
+  })
+
 minetest.register_node("naturalbiomes:alppine1_sapling", {
   description = ("Pine Sapling"),
   drawtype = "plantlike",
@@ -295,6 +301,12 @@ minetest.register_node("naturalbiomes:alppine2_leaves", {
 
   after_place_node = default.after_place_leaves,
 })
+
+default.register_leafdecay({
+    leaves = {"naturalbiomes:alppine2_leaves"},
+    trunks = {"naturalbiomes:alppine2_trunk"},
+    radius = 3,
+  })
 
 minetest.register_node("naturalbiomes:alppine2_sapling", {
   description = ("Pine Sapling"),
